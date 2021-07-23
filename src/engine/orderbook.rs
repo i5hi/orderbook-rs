@@ -82,17 +82,17 @@ impl<Asset> Orderbook<Asset>
 where
     Asset: Debug + Clone + Copy + Eq,
 {
-    /// Create new orderbook for pair of assets
-    ///
-    /// # Examples
-    ///
-    /// Basic usage:
-    /// ```
-    /// let mut orderbook = Orderbook::new(Asset::BTC, Asset::USD);
-    /// let result = orderbook.process_order(OrderRequest::MarketOrder{  });
-    /// assert_eq!(orderbook)
-    /// ```
-    // todo fix doc test!
+// / Create new orderbook for pair of assets
+// /
+// / # Examples
+// /
+// / Basic usage:
+// / ```
+// / let mut orderbook = Orderbook::new(Asset::BTC, Asset::USD);
+// / let result = orderbook.process_order(OrderRequest::MarketOrder{  });
+// / assert_eq!(orderbook)
+// / ```
+// todo fix doc test!
     pub fn new(order_asset: Asset, price_asset: Asset) -> Self {
         Orderbook {
             order_asset,

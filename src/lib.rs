@@ -24,16 +24,16 @@ mod tests {
     enum Asset {
         USD,
         EUR,
+        INR,
         BTC,
-        ETH,
     }
 
     fn parse_asset(asset: &str) -> Option<Asset> {
         match asset {
             "USD" => Some(Asset::USD),
             "EUR" => Some(Asset::EUR),
+            "INR" => Some(Asset::INR),
             "BTC" => Some(Asset::BTC),
-            "ETH" => Some(Asset::ETH),
             _ => None,
         }
     }
