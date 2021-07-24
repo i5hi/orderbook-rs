@@ -17,7 +17,7 @@ fn parse_asset(asset: &str) -> Option<BrokerAsset> {
     match asset {
         "INR" => Some(BrokerAsset::INR),
         "CAD" => Some(BrokerAsset::CAD),
-        "BTC" => Some(BrokerAsset::BTC),
+        "BTC" => Some(BrokerAsset::BTC),    
         _ => None,
     }
 }
